@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with React</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 1.5em;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f8f9fa;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin: 0 0 20px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      margin: 0 0 20px;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(25% - 40px);
+      box-sizing: border-box;
+    }
+
+    .card-image {
+      background-color: #ddd;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 1.5em;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+      margin: 0 0 20px;
+    }
+
+    .find-out-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      function LandingPage() {
+        return (
+          React.createElement('div', { className: 'container' },
+            React.createElement('nav', { className: 'navbar' },
+              React.createElement('a', { href: '#', className: 'logo' }, 'Start Bootstrap'),
+              React.createElement('div', { className: 'nav-links' },
+                React.createElement('a', { href: '#' }, 'Home'),
+                React.createElement('a', { href: '#' }, 'About'),
+                React.createElement('a', { href: '#' }, 'Services'),
+                React.createElement('a', { href: '#' }, 'Contact')
+              )
+            ),
+            React.createElement('header', { className: 'header' },
+              React.createElement('h1', null, 'A Warm Welcome!'),
+              React.createElement('p', null, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.'),
+              React.createElement('button', { className: 'cta-button' }, 'Call to action!')
+            ),
+            React.createElement('section', { className: 'cards' },
+              React.createElement('div', { className: 'card' },
+                React.createElement('div', { className: 'card-image' }, '500 x 325'),
+                React.createElement('h2', null, 'Card title'),
+                React.createElement('p', null, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.'),
+                React.createElement('button', { className: 'find-out-button' }, 'Find Out More!')
+              ),
+              React.createElement('div', { className: 'card' },
+                React.createElement('div', { className: 'card-image' }, '500 x 325'),
+                React.createElement('h2', null, 'Card title'),
+                React.createElement('p', null, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.'),
+                React.createElement('button', { className: 'find-out-button' }, 'Find Out More!')
+              ),
+              React.createElement('div', { className: 'card' },
+                React.createElement('div', { className: 'card-image' }, '500 x 325'),
+                React.createElement('h2', null, 'Card title'),
+                React.createElement('p', null, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.'),
+                React.createElement('button', { className: 'find-out-button' }, 'Find Out More!')
+              ),
+              React.createElement('div', { className: 'card' },
+                React.createElement('div', { className: 'card-image' }, '500 x 325'),
+                React.createElement('h2', null, 'Card title'),
+                React.createElement('p', null, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse necessitatibus neque.'),
+                React.createElement('button', { className: 'find-out-button' }, 'Find Out More!')
+              )
+            ),
+            React.createElement('footer', { className: 'footer' },
+              'Copyright © Your Website 2024'
+            )
+          )
+        );
+      }
+
+      ReactDOM.render(React.createElement(LandingPage), document.getElementById('root'));
+    });
+  </script>
+</body>
+</html>
